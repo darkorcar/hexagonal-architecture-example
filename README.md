@@ -2,8 +2,6 @@
 
 This project demonstrates a clean implementation of Hexagonal Architecture (Ports and Adapters) using Spring Boot and Kotlin.
 
-Excalidraw link: https://excalidraw.com/#json=WVsiiTxnyXDfbShNvnU0N,2TwSeejbpuO_JomxjEO9WQ
-
 ## Architecture Overview
 
 Top level diagram
