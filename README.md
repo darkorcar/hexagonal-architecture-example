@@ -6,6 +6,10 @@ Excalidraw link: https://excalidraw.com/#json=WVsiiTxnyXDfbShNvnU0N,2TwSeejbpuO_
 
 ## Architecture Overview
 
+Top level diagram
+
+![img.png](img.png)
+
 The project follows the hexagonal architecture pattern with clear separation of concerns:
 
 ### Domain Layer (Core)
