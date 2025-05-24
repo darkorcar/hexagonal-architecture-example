@@ -2,6 +2,45 @@
 
 This project demonstrates a clean implementation of Hexagonal Architecture (Ports and Adapters) using Spring Boot and Kotlin.
 
+## Hexagonal Architecture
+
+Hexagonal Architecture, also known as the Ports and Adapters architecture,
+is a software design pattern that aims to create loosely coupled application
+components so that the core logic is isolated from external concerns like
+databases, UI, or third-party services.
+
+### Core Concepts
+
+The key idea is to encapsulate the application's core logic and expose it through ports,
+which can be connected to any adapter (like a web interface, CLI, database, or message queue).
+
+This makes the application:
+
+* More testable (core logic can be tested without involving external systems)
+
+* Easier to maintain and extend
+
+* More adaptable to changes in technologies
+
+### Structure
+
+1. Core (Application Domain): Contains the business logic.
+
+   Defines interfaces (ports) for how it communicates with the outside world. 
+   Is completely unaware of any frameworks or infrastructure.
+
+2. Ports: Interfaces that define how the application expects to interact with the outside world. 
+   
+   Inbound ports: Entry points for driving the application (e.g., use cases, UserService). 
+
+   Outbound ports: Interfaces the core uses to call out to other systems (e.g., repository interfaces, EmailsService).
+
+3. Adapters: Implement the ports.
+
+   Inbound adapters: UI controllers, REST APIs, CLI, etc.
+
+   Outbound adapters: Database implementations, external API clients, message brokers.
+
 ## Architecture Overview
 
 Top level diagram
