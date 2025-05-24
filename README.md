@@ -50,18 +50,14 @@ src/
 - **Unit Tests**: Test domain logic in isolation using mocks
 - **Integration Tests**: Test adapter implementations with real dependencies
 - **Separate Gradle Tasks**:
-    - `./gradlew unitTest` - Runs only unit tests
     - `./gradlew integrationTest` - Runs integration tests
     - `./gradlew test` - Runs all tests
 
 ## Running the Application
 
 ```bash
-# Run all tests
+# Run unit tests
 ./gradlew test
-
-# Run only unit tests
-./gradlew unitTest
 
 # Run only integration tests
 ./gradlew integrationTest
